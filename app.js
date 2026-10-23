@@ -7,3 +7,6 @@ app.get('/', (req, res) => {
 });
 
 export default app;
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
